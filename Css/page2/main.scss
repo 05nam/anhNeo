@@ -1,0 +1,112 @@
+.wrappage {
+  min-height: 917px;
+  background-color: #fffdf4;
+  //   max-width: 1920px;
+
+  .container {
+    // max-width: 1920px;
+    width: 100%;
+    padding: 70px 0;
+
+    .title {
+      max-width: 519px;
+      height: 154px;
+      margin-bottom: 40px;
+      h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: -0.05em;
+        color: #374639;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 27px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #3f514b;
+      }
+    }
+    .car {
+      max-width: 1529px;
+      .car_item {
+        .image {
+          max-width: 356px;
+          max-height: 266px;
+          margin-bottom: 18px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .flow-yoga {
+          .yoga_title {
+            max-width: 308px;
+            h2 {
+              margin-bottom: 8px;
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 25px;
+              letter-spacing: -0.02em;
+              color: #414f42;
+            }
+            p {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 24px;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #3f514b;
+              margin-bottom: 6px;
+            }
+          }
+        }
+        .price {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          color: #3f514b;
+          display: flex;
+          .before-sale {
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            text-decoration-line: line-through;
+            text-transform: uppercase;
+            font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+            margin-right: 6px;
+          }
+          .after-sale {
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: uppercase;
+            font-feature-settings: "pnum" on, "lnum" on;
+          }
+        }
+        .week {
+          //   border-bottom: #ecedec solid 1px;
+          .row {
+            // border-top: #ecedec solid 1px;
+            // padding: 12px 0;
+            .span_line {
+              margin: 0 auto;
+              min-width: 263px;
+              height: 1px;
+              background-color: #ecedec;
+              margin: 12px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
