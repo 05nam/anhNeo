@@ -93,16 +93,43 @@
           }
         }
         .week {
-          //   border-bottom: #ecedec solid 1px;
           .row {
-            // border-top: #ecedec solid 1px;
-            // padding: 12px 0;
             .span_line {
               margin: 0 auto;
               min-width: 263px;
               height: 1px;
               background-color: #ecedec;
               margin: 12px 0;
+            }
+            .col-4 {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              /* identical to box height, or 120% */
+
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+
+              /* Secondary/Subtitle */
+
+              color: #72776c;
+            }
+            .col-8 {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              /* identical to box height, or 171% */
+
+              font-feature-settings: "pnum" on, "lnum" on;
+
+              /* Secondary/Color 2 */
+
+              color: #4e5c58;
             }
           }
         }
