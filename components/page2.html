@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>flex box</title>
     <!-- font popping -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,200 +19,179 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- reset css -->
-    <link rel="stylesheet" href="../Css/reset.css" />
-    <!-- css -->
-    <link rel="stylesheet" href="../Css/page2/main.css" />
+    <link rel="stylesheet" href="../Css/page4/page4.css" />
   </head>
   <body>
-    <div class="wrappage">
-      <div class="container">
-        <div class="row">
+    <section class="section">
+      <div class="my-iner">
+        <div class="container wrapper">
           <div class="title">
-            <h1>Online Courses</h1>
-            <p>
+            <h1 class="title_top">Online Courses</h1>
+            <p class="title_bot">
               Be yourself at our center, a place where you can encounter the
               body, mind and spirt balancing and merging them into oneness.
             </p>
           </div>
-        </div>
-        <div class="car row">
-          <div
-            class="car_item col-lg-3 col-md-6 col-sm-12 mx-md-auto text-sm-center"
-          >
-            <div class="image">
-              <img
-                src="../Img/page2/oksana-taran-xB4ExGcUai0-unsplash.png"
-                alt=""
-              />
-            </div>
-            <div class="flow-yoga">
-              <div class="yoga_title">
-                <h2>Vinyasa Flow Yoga</h2>
-                <p>
-                  Our aim is to share yoga knowledge with the students and help
-                  them relax
-                </p>
+          <div class="cards d-flex row">
+            <div class="card_item col-lg-3 col-sm-6">
+              <div class="card_image">
+                <img
+                  class="img-fluid"
+                  src="../Img/page2/oksana-taran-xB4ExGcUai0-unsplash.png"
+                  alt=""
+                />
               </div>
-
-              <div class="price">
-                <div class="before-sale">$245</div>
-                <div class="after-sale">$200</div>
+              <div class="card_content">
+                <div class="content-top">
+                  <h2 class="content-top-header">Vinyasa Flow Yoga</h2>
+                  <p class="content-top-body">
+                    Our aim is to share yoga knowledge with the students and
+                    help them relax
+                  </p>
+                  <div class="price">
+                    <span class="price-befor">$245</span>
+                    <span class="price-after">$200</span>
+                  </div>
+                </div>
+                <div class="content-bot"></div>
               </div>
-              <div class="week">
-                <span class="span_line"></span>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 1</div>
-                  <div class="col-8">Get started & balance</div>
+              <div class="card_week">
+                <div class="week-item">
+                  <div class="week-left">WEEK 1</div>
+                  <div class="week-right">Get started & balance</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 2</div>
-                  <div class="col-8">Focus on the mind</div>
+                <div class="week-item">
+                  <div class="week-left">WEEK 2</div>
+                  <div class="week-right">Focus on the mind</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 3</div>
-                  <div class="col-8">Head relax yoga</div>
-                  <span class="span_line"></span>
+                <div class="week-item">
+                  <div class="week-left">WEEK 3</div>
+                  <div class="week-right">Head relax yoga</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="car_item col-lg-3 col-md-6 col-sm-12 mx-md-auto text-sm-center"
-          >
-            <div class="image">
-              <img
-                src="../Img/page2/conscious-design-VsI_74zRzAo-unsplash 1.png"
-                alt=""
-              />
-            </div>
-            <div class="flow-yoga">
-              <div class="yoga_title">
-                <h2>Vinyasa Flow Yoga</h2>
-                <p>
-                  Our aim is to share yoga knowledge with the students and help
-                  them relax
-                </p>
+            <div class="card_item col-lg-3 col-sm-6">
+              <div class="card_image">
+                <img
+                  class="img-fluid"
+                  src="../Img/page2/conscious-design-VsI_74zRzAo-unsplash 1.png"
+                  alt=""
+                />
               </div>
-
-              <div class="price">
-                <div class="before-sale">$245</div>
-                <div class="after-sale">$200</div>
+              <div class="card_content">
+                <div class="content-top">
+                  <h2 class="content-top-header">Vinyasa Flow Yoga</h2>
+                  <p class="content-top-body">
+                    Our aim is to share yoga knowledge with the students and
+                    help them relax
+                  </p>
+                  <div class="price">
+                    <span class="price-befor">$245</span>
+                    <span class="price-after">$200</span>
+                  </div>
+                </div>
+                <div class="content-bot"></div>
               </div>
-              <div class="week">
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 1</div>
-                  <div class="col-8">Get started & balance</div>
+              <div class="card_week">
+                <div class="week-item">
+                  <div class="week-left">WEEK 1</div>
+                  <div class="week-right">Get started & balance</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 2</div>
-                  <div class="col-8">Focus on the mind</div>
+                <div class="week-item">
+                  <div class="week-left">WEEK 2</div>
+                  <div class="week-right">Focus on the mind</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 3</div>
-                  <div class="col-8">Head relax yoga</div>
-                  <span class="span_line"></span>
+                <div class="week-item">
+                  <div class="week-left">WEEK 3</div>
+                  <div class="week-right">Head relax yoga</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="car_item col-lg-3 col-md-6 col-sm-12 mx-md-auto text-sm-center"
-          >
-            <div class="image">
-              <img src="../Img/page2/image 1461.png" alt="" />
+            <div class="card_item col-lg-3 col-sm-6">
+              <div class="card_image">
+                <img
+                  class="img-fluid"
+                  src="../Img/page2/image 1461.png"
+                  alt=""
+                />
+              </div>
+              <div class="card_content">
+                <div class="content-top">
+                  <h2 class="content-top-header">Vinyasa Flow Yoga</h2>
+                  <p class="content-top-body">
+                    Our aim is to share yoga knowledge with the students and
+                    help them relax
+                  </p>
+                  <div class="price">
+                    <span class="price-befor">$245</span>
+                    <span class="price-after">$200</span>
+                  </div>
+                </div>
+                <div class="content-bot"></div>
+              </div>
+              <div class="card_week">
+                <div class="week-item">
+                  <div class="week-left">WEEK 1</div>
+                  <div class="week-right">Get started & balance</div>
+                </div>
+                <div class="week-item">
+                  <div class="week-left">WEEK 2</div>
+                  <div class="week-right">Focus on the mind</div>
+                </div>
+                <div class="week-item">
+                  <div class="week-left">WEEK 3</div>
+                  <div class="week-right">Head relax yoga</div>
+                </div>
+              </div>
             </div>
-            <div class="flow-yoga">
-              <div class="yoga_title">
-                <h2>Vinyasa Flow Yoga</h2>
-                <p>
-                  Our aim is to share yoga knowledge with the students and help
-                  them relax
-                </p>
+            <div class="card_item col-lg-3 col-sm-6">
+              <div class="card_image">
+                <img
+                  class="img-fluid"
+                  src="../Img/page2/conscious-design-VsI_74zRzAo-unsplash 1.png"
+                  alt=""
+                />
               </div>
-              <div class="price">
-                <div class="before-sale">$245</div>
-                <div class="after-sale">$200</div>
-              </div>
-              <div class="week">
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 1</div>
-                  <div class="col-8">Get started & balance</div>
-                </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 2</div>
-                  <div class="col-8">Focus on the mind</div>
-                </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 3</div>
-                  <div class="col-8">Head relax yoga</div>
-                  <span class="span_line"></span>
+              <div class="card_content">
+                <div class="content-top">
+                  <h2 class="content-top-header">Vinyasa Flow Yoga</h2>
+                  <p class="content-top-body">
+                    Our aim is to share yoga knowledge with the students and
+                    help them relax
+                  </p>
+                  <div class="price">
+                    <span class="price-befor">$245</span>
+                    <span class="price-after">$200</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="car_item col-lg-3 col-md-6 col-sm-12 mx-md-auto text-sm-center"
-          >
-            <div class="image">
-              <img
-                src="../Img/page2/conscious-design-VsI_74zRzAo-unsplash 1 (1).png"
-                alt=""
-              />
-            </div>
-            <div class="flow-yoga">
-              <div class="yoga_title">
-                <h2>Vinyasa Flow Yoga</h2>
-                <p>
-                  Our aim is to share yoga knowledge with the students and help
-                  them relax
-                </p>
-              </div>
-
-              <div class="price">
-                <div class="before-sale">$245</div>
-                <div class="after-sale">$200</div>
-              </div>
-              <div class="week">
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 1</div>
-                  <div class="col-8">Get started & balance</div>
+              <div class="card_week">
+                <div class="week-item">
+                  <div class="week-left">WEEK 1</div>
+                  <div class="week-right">Get started & balance</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 2</div>
-                  <div class="col-8">Focus on the mind</div>
+                <div class="week-item">
+                  <div class="week-left">WEEK 2</div>
+                  <div class="week-right">Focus on the mind</div>
                 </div>
-                <div class="row">
-                  <span class="span_line"></span>
-                  <div class="col-4">WEEK 3</div>
-                  <div class="col-8">Head relax yoga</div>
-                  <span class="span_line"></span>
+                <div class="week-item">
+                  <div class="week-left">WEEK 3</div>
+                  <div class="week-right">Head relax yoga</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <!-- bootstrap 4 -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

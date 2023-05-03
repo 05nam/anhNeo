@@ -1,17 +1,17 @@
-.wrappage {
-  min-height: 917px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.title {
+  height: 155px;
+  max-width: 520px;
+  margin-bottom: 40px;
   background-color: #fffdf4;
 }
-.wrappage .container {
-  width: 100%;
-  padding: 70px 0;
-}
-.wrappage .container .title {
-  max-width: 519px;
-  height: 154px;
-  margin-bottom: 40px;
-}
-.wrappage .container .title h1 {
+.title .title_top {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@
   color: #374639;
   margin-bottom: 20px;
 }
-.wrappage .container .title p {
+.title .title_bot {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -30,35 +30,46 @@
   font-feature-settings: "pnum" on, "lnum" on;
   color: #3f514b;
 }
-.wrappage .container .car {
-  max-width: 1529px;
+
+.section .container {
+  padding: 0;
 }
-.wrappage .container .car .car_item .image {
-  max-width: 356px;
+
+.section {
+  background-color: #fffdf4;
+}
+.section .cards {
+  padding: 0;
+  margin: 0 0 0 0px;
+}
+.section .cards .card_item {
+  padding: 12px;
+}
+.section .cards .card_item .card_image {
+  overflow: hidden;
   max-height: 266px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
-.wrappage .container .car .car_item .image img {
+.section .cards .card_item .card_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.wrappage .container .car .car_item .flow-yoga .yoga_title {
-  max-width: 308px;
+.section .cards .card_item .card_content {
+  margin-bottom: 20px;
+  flex: 1;
 }
-.wrappage .container .car .car_item .flow-yoga .yoga_title h2 {
-  margin-bottom: 8px;
-  font-family: "Poppins";
+.section .cards .card_item .card_content .content-top-header {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: -0.02em;
   color: #414f42;
+  margin-bottom: 8px;
 }
-.wrappage .container .car .car_item .flow-yoga .yoga_title p {
-  font-family: "Poppins";
+.section .cards .card_item .card_content .content-top-body {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -66,57 +77,102 @@
   font-feature-settings: "pnum" on, "lnum" on;
   color: #3f514b;
   margin-bottom: 6px;
+  max-width: 308px;
 }
-.wrappage .container .car .car_item .price {
-  font-family: "Poppins";
+
+.price .price-befor {
   font-style: normal;
   font-weight: 400;
-  color: #3f514b;
-  display: flex;
-}
-.wrappage .container .car .car_item .price .before-sale {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.01em;
   text-decoration-line: line-through;
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on, "kern" off;
-  margin-right: 6px;
+  color: #72776c;
+  margin-bottom: 20px;
 }
-.wrappage .container .car .car_item .price .after-sale {
+.price .price-after {
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on;
+  color: #3f514b;
 }
-.wrappage .container .car .car_item .week .row .span_line {
-  margin: 0 auto;
-  min-width: 263px;
-  height: 1px;
-  background-color: #ecedec;
-  margin: 12px 0;
+
+.card_week {
+  border-bottom: 1px solid #72776c;
+  padding-bottom: 1px;
+  margin-bottom: auto;
 }
-.wrappage .container .car .car_item .week .row .col-4 {
-  font-family: "Poppins";
+.card_week .week-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  border-top: 1px solid #72776c;
+}
+.card_week .week-item .week-left {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  /* identical to box height, or 120% */
   letter-spacing: 0.01em;
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on, "kern" off;
-  /* Secondary/Subtitle */
   color: #72776c;
 }
-.wrappage .container .car .car_item .week .row .col-8 {
-  font-family: "Poppins";
+.card_week .week-item .week-right {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
   font-feature-settings: "pnum" on, "lnum" on;
-  /* Secondary/Color 2 */
   color: #4e5c58;
+  flex: 1;
+  margin-left: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section .my-iner {
+    padding: 70px 194px;
+  }
+  .section .my-iner .container {
+    max-width: 1529px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .section .my-iner {
+    padding: 50px 100px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .section .my-iner {
+    padding: 25px 50px;
+  }
+  .section .card_week .week-right {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .section .my-iner {
+    padding: 10px 10px;
+  }
+  .section .my-iner .container .card_item {
+    padding: 0px;
+  }
+  .section .my-iner .container .content-top {
+    text-align: center;
+  }
+  .week-item .week-left {
+    margin-left: 30px;
+    margin-right: 75px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,139 +1,207 @@
-.wrappage {
-  min-height: 917px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.title {
+  height: 155px;
+  max-width: 520px;
+  margin-bottom: 40px;
   background-color: #fffdf4;
-  //   max-width: 1920px;
+  .title_top {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+    color: #374639;
+    margin-bottom: 20px;
+  }
+  .title_bot {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #3f514b;
+  }
+}
 
+.section {
+  .my-iner {
+  }
   .container {
-    // max-width: 1920px;
-    width: 100%;
-    padding: 70px 0;
-
-    .title {
-      max-width: 519px;
-      height: 154px;
-      margin-bottom: 40px;
-      h1 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 45px;
-        line-height: 53px;
-        letter-spacing: -0.05em;
-        color: #374639;
-        margin-bottom: 20px;
-      }
-      p {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 27px;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #3f514b;
-      }
+    padding: 0;
+  }
+}
+.section {
+  background-color: #fffdf4;
+  .cards {
+    padding: 0;
+    margin: 0 0 0 0px;
+    .col-lg-3 {
     }
-    .car {
-      max-width: 1529px;
-      .car_item {
-        .image {
-          max-width: 356px;
-          max-height: 266px;
-          margin-bottom: 18px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+    .card_item {
+      padding: 12px;
+      .card_image {
+        overflow: hidden;
+        max-height: 266px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
-        .flow-yoga {
-          .yoga_title {
-            max-width: 308px;
-            h2 {
-              margin-bottom: 8px;
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 25px;
-              letter-spacing: -0.02em;
-              color: #414f42;
-            }
-            p {
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 17px;
-              line-height: 24px;
-              font-feature-settings: "pnum" on, "lnum" on;
-              color: #3f514b;
-              margin-bottom: 6px;
-            }
-          }
-        }
-        .price {
-          font-family: "Poppins";
+      }
+      .card_content {
+        margin-bottom: 20px;
+        flex: 1;
+        .content-top-header {
           font-style: normal;
           font-weight: 400;
-          color: #3f514b;
-          display: flex;
-          .before-sale {
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: 0.01em;
-            text-decoration-line: line-through;
-            text-transform: uppercase;
-            font-feature-settings: "pnum" on, "lnum" on, "kern" off;
-            margin-right: 6px;
-          }
-          .after-sale {
-            font-size: 18px;
-            line-height: 23px;
-            text-transform: uppercase;
-            font-feature-settings: "pnum" on, "lnum" on;
-          }
+          font-size: 20px;
+          line-height: 25px;
+          letter-spacing: -0.02em;
+          color: #414f42;
+          margin-bottom: 8px;
         }
-        .week {
-          .row {
-            .span_line {
-              margin: 0 auto;
-              min-width: 263px;
-              height: 1px;
-              background-color: #ecedec;
-              margin: 12px 0;
-            }
-            .col-4 {
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 18px;
-              /* identical to box height, or 120% */
-
-              letter-spacing: 0.01em;
-              text-transform: uppercase;
-              font-feature-settings: "pnum" on, "lnum" on, "kern" off;
-
-              /* Secondary/Subtitle */
-
-              color: #72776c;
-            }
-            .col-8 {
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 24px;
-              /* identical to box height, or 171% */
-
-              font-feature-settings: "pnum" on, "lnum" on;
-
-              /* Secondary/Color 2 */
-
-              color: #4e5c58;
-            }
-          }
+        .content-top-body {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 24px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #3f514b;
+          margin-bottom: 6px;
+          max-width: 308px;
         }
       }
+    }
+  }
+}
+
+.price {
+  .price-befor {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+    color: #72776c;
+    margin-bottom: 20px;
+  }
+  .price-after {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #3f514b;
+  }
+}
+
+.card_week {
+  border-bottom: 1px solid #72776c;
+  padding-bottom: 1px;
+
+  margin-bottom: auto;
+  .week-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    border-top: 1px solid #72776c;
+    .week-left {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+      color: #72776c;
+    }
+    .week-right {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #4e5c58;
+      flex: 1;
+      margin-left: 24px;
+    }
+  }
+}
+//  >1200px
+@media screen and (min-width: 1200px) {
+  .section {
+    .my-iner {
+      padding: 70px 194px;
+      .container {
+        max-width: 1529px;
+      }
+    }
+  }
+}
+//  >992px
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .section {
+    .my-iner {
+      padding: 50px 100px;
+      .container {
+      }
+    }
+  }
+}
+//  576px< >992px
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .section {
+    .my-iner {
+      padding: 25px 50px;
+      .container {
+      }
+    }
+    .card_week {
+      .week-right {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//  <576pxx
+@media screen and (max-width: 575px) {
+  .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .section {
+    .my-iner {
+      padding: 10px 10px;
+      .container {
+        .card_item {
+          padding: 0px;
+        }
+        .content-top {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .week-item {
+    .week-left {
+      margin-left: 30px;
+      margin-right: 75px;
     }
   }
 }
