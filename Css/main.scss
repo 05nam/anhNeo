@@ -1,68 +1,64 @@
-.wrappage {
-  min-height: 704px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.section {
   background-color: #f4f4f4;
-  max-width: 1920px;
-  .container {
-    max-width: 1920px;
-    width: 100%;
-    .row {
-      margin: 0 auto;
-    }
-    .content {
-      background-color: white;
-      max-width: 1475px;
-      width: 100%;
-
-      min-height: 575px;
-      border-radius: 20px;
-
-      .content_top {
-        .img {
-          height: 100%;
-          img {
+  .warpage {
+    .container {
+      padding: 0;
+      .content {
+        padding: 50px;
+        background-color: #ffffff;
+        .content_top {
+          padding: 0;
+          .img {
+            max-width: 640px;
             max-height: 475px;
-            border-radius: 12px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 12px;
+            }
           }
         }
-      }
-      .content_bot {
-        padding: 0;
-        height: 100%;
-        .bot-main {
-          .bot_item {
-            max-width: 494px;
-
-            h3 {
-              font-family: "Poppins";
+        .content_bot {
+          padding: 0;
+          .bot-main {
+            padding-top: 19px;
+            .bot-main-title {
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
               line-height: 20px;
               letter-spacing: 0.01em;
               text-transform: uppercase;
-              font-feature-settings: "pnum" on, "lnum" on, "kern" off;
               color: rgba(0, 0, 0, 0.3);
-              margin-top: 69px;
+              padding-bottom: 0;
             }
-            .icon {
+            .bot-main-icon {
               color: #e0e0e0;
               font-size: 52px;
 
-              margin-top: 55px;
+              padding-top: 55px;
             }
-            .text {
-              min-height: 160px;
+            .bot-main-text {
               font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               line-height: 40px;
-
               letter-spacing: -0.04em;
               color: #0d0d0d;
-              margin-top: 12px;
+              padding-top: 12px;
+              font-size: 30px;
+              max-width: 494px;
+              margin: 0 auto;
             }
-
-            .post {
+            .bot-main-post {
               font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
@@ -71,9 +67,9 @@
               letter-spacing: -0.01em;
               color: #0d0d0d;
 
-              margin-top: 20px;
+              padding-top: 20px;
             }
-            .artist {
+            .bot-main-artist {
               font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
@@ -92,107 +88,104 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .wrappage {
-    padding-top: 65px;
-
-    .bot-main {
-      .bot_item {
-        margin-left: 97px;
-        .text {
-          font-size: 30px;
-        }
-      }
+//  >1200px
+@media screen and (min-width: 1200px) {
+  .warpage {
+    .vien {
+      padding: 65px 222px 64px 223px;
     }
-    .img {
-      padding-top: 50px;
-      padding-left: 50px;
-      img {
-        max-width: 638px;
-      }
+    .container {
+      max-width: 1475px;
     }
   }
 }
-@media screen and (max-width: 1024px) {
-  .wrappage {
-    padding-top: 35px;
-    .bot-main {
-      margin: 0px auto;
-      .bot_item {
-        padding: 0 20px;
-        .text {
-          font-size: 24px;
-        }
+//  >992px
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .section {
+    .warpage {
+      .vien {
+        padding: 50px 60px 64px 60px;
       }
-    }
-    .img {
-      img {
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .wrappage {
-    padding-top: 15px;
-
-    .bot-main {
-      .bot_item {
-        margin: 0 auto;
-        .text {
-          p {
-            font-size: 20px;
+      .container {
+        .content {
+          padding: 20px;
+          margin: 0;
+          .content_top {
+            .img {
+              img {
+                width: 90%;
+              }
+            }
+          }
+          .content_bot {
+            .bot-main {
+              .bot-main-icon {
+                padding-top: 15px;
+                font-size: 45px;
+              }
+              .bot-main-text {
+                padding-top: 0;
+              }
+            }
           }
         }
       }
     }
-    .img {
-      img {
-        margin: 5px auto;
+  }
+}
+
+//  576px< >992px
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .section {
+    .warpage {
+      .vien {
+        padding: 50px 60px 64px 60px;
+
+        .container {
+          .content {
+            padding: 20px;
+            margin: 0;
+            .content_top {
+              display: flex;
+              flex-shrink: 1;
+              .img {
+                display: flex;
+                justify-content: center;
+                img {
+                  max-width: 90%;
+                }
+              }
+            }
+            .content_bot {
+              .bot-main {
+                .bot-main-icon {
+                  padding-top: 0;
+                  font-size: 45px;
+                }
+                .bot-main-text {
+                  padding-top: 0;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .wrappage {
-    padding-top: 5px;
-
-    .bot-main {
-      .bot_item {
-        padding: 0 20px;
-        .text {
-          p {
-            font-size: 20px;
+//  <576pxx
+@media screen and (max-width: 575px) {
+  .section {
+    .warpage {
+      .vien {
+        .container {
+          .content {
+            .content_top {
+            }
           }
         }
-      }
-    }
-    .img {
-      img {
-        // margin: 0px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 375px) {
-  .wrappage {
-    padding-top: 5px;
-
-    .bot-main {
-      .bot_item {
-        padding: 0 20px;
-        .text {
-          p {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    .img {
-      img {
-        // margin: 0px;
       }
     }
   }

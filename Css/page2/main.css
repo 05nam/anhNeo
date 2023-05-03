@@ -128,12 +128,14 @@ body {
 .card_week .week-item .week-right {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #4e5c58;
   flex: 1;
   margin-left: 24px;
+}
+.card_week .week-item .week-right.right-size {
+  font-size: 17px;
 }
 
 @media screen and (min-width: 1200px) {
